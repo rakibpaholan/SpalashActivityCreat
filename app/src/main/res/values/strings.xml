@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Practice_Splash_Custom_toast_Button_CheckBox_Radio</string>
+
+
+    <string name="title">Practice with Splash Animation, Custom Toast, CheckBox, Radio Button</string>
+    <string name="loading">Loading..</string>
+
+    <string name="login_for_toast">Login</string>
+    <string name="toastShowText">User is Login</string>
+
+    <string name="checkBoxTitle">Check Practice</string>
+    <string name="milkCheckBox">Milk</string>
+    <string name="saltCheckBox">Salt</string>
+    <string name="sugarCheckBox">Sugar</string>
+    <string name="checkButton">Buy</string>
+
+
+    <string name="radio_title">Radio Button Practice</string>
+    <string name="male">Male</string>
+    <string name="feMale">Female</string>
+    <string name="radioButton">Check</string>
+
+
+
+
+</resources>

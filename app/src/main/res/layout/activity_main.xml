@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <ScrollView
+
+        android:id="@+id/scrollView1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <!--==========================-->
+       <!--Layout inside ScrollButton-->
+       <!--==========================-->
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+
+            <!--======================-->
+           <!--Toast Show-->
+           <!--=====================-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/design_default_color_primary_dark"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="15dp">
+
+               <TextView
+                   android:id="@+id/toastPractice"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/title"
+                   android:textAlignment="center"
+                   android:textColor="@color/white"
+                   android:textSize="20dp" />
+
+               <Button
+                   android:id="@+id/toastButton"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="25dp"
+                   android:background="@color/white"
+                   android:text="@string/login_for_toast" />
+           </LinearLayout>
+
+
+
+
+           <LinearLayout
+               android:layout_marginTop="20dp"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+
+               <LinearLayout
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/CheckButton"
+                       android:text="@string/checkBoxTitle"
+                       android:textSize="25sp"
+                       android:textAlignment="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+
+
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_margin="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <CheckBox
+                       android:id="@+id/milkCheckBox"
+                       android:text="@string/milkCheckBox"
+                       android:textSize="20sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   <CheckBox
+                       android:id="@+id/saltCheckBox"
+                       android:text="@string/saltCheckBox"
+                       android:textSize="20sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   <CheckBox
+                       android:id="@+id/sugarCheckBox"
+                       android:text="@string/sugarCheckBox"
+                       android:textSize="20sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <Button
+                       android:id="@+id/checkButton"
+                       android:text="@string/checkButton"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   <TextView
+                       android:id="@+id/showProduct"
+                       android:text=""
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+
+       </LinearLayout>
+
+           <!--=====================-->
+           <!--Radio Button LayOut-->
+           <!--======================-->
+       <LinearLayout
+           android:gravity="center_horizontal"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/radioButton"
+                   android:text="@string/radio_title"
+                   android:textAlignment="center"
+                   android:textSize="20sp"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_margin="15dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <!--==================-->
+               <!--Radio Button Group-->
+               <!--==================-->
+               <RadioGroup
+                   android:id="@+id/radioButtonGroupId"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <RadioButton
+                       android:id="@+id/maleId"
+                       android:text="Male"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <RadioButton
+                       android:id="@+id/femaleId"
+                       android:text="@string/feMale"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+               </RadioGroup>
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:gravity="center_horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <Button
+                       android:id="@+id/clickableRadioButton"
+                       android:text="clickableRadioButton"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:id="@+id/showRadioButtonInfo"
+                       android:text="@string/radio_title"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+           <!--==================-->
+           <!--Radio LayOut End-->
+           <!--==================-->
+
+
+
+
+           <!--====================-->
+           <!--ProgressBar Layout-->
+           <!--======================-->
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_marginTop="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:gravity="center_horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <RatingBar
+                       android:id="@+id/ratingBar"
+                       android:numStars="7"
+                       android:stepSize="1"
+                       android:rating="3"
+                       android:progressBackgroundTint="@color/design_default_color_primary_dark"
+                       android:progressTint="@color/design_default_color_primary"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:id="@+id/showRatingValue"
+                       android:layout_marginTop="15dp"
+                       android:text="ShowRatingValue"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+
+           </LinearLayout>
+
+   </LinearLayout>
+       <!--=========================-->
+       <!--Layout inside ScrollButton End -->
+       <!--==========================-->
+
+   </ScrollView>
+
+</LinearLayout>
